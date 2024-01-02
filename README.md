@@ -1,1 +1,1 @@
-# angular-app-kugoo
+# kugoo-angular
