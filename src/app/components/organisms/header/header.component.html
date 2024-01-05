@@ -1,18 +1,28 @@
-<!-- <p class="border px-[165px]">header works!</p> -->
-<header class="flex flex-col px-[165px] border">
-  <div class="flex justify-between">
-    <div class="flex">
-      <app-nav></app-nav>
-      <app-social-nav></app-social-nav>
+<header class="flex flex-col">
+  <div class="relative">
+    <div class="flex justify-between align-center border-b-[1px] border-gray200 py-[1.2rem] px-[16.5rem] ">
+      <div class="flex">
+        <app-nav class="flex w-[26.8rem] justify-between"></app-nav>
+        <app-social-nav></app-social-nav>
+      </div>
+      <app-phone-numbers-section></app-phone-numbers-section>
     </div>
-    <app-tel-number></app-tel-number>
   </div>
-  <div class="flex">
-    <app-logo></app-logo>
-    <app-button></app-button>
-    <app-input></app-input>
+
+  <div class="flex px-[16.5rem] mt-[2.7rem] mb-[3.5rem]">
+    <app-logo class=""></app-logo>
+    <app-button
+      class="bg-purple w-[11.4rem] h-[4rem] flex justify-center align-center text-white rounded-[.5rem] text-xl border-[0.15rem] mr-[2rem] ml-[3.5rem]"
+      [buttonText]="btnTextCatalog"></app-button>
+    <form class="border border-purple border-[0.15rem] flex gap-[2rem] rounded-[0.5rem]">
+      <app-select class='flex justify-center align-center rounded-[.5rem]  bg-gray200'></app-select>
+      <app-input class="flex align-center"></app-input>
+      <app-button class="justify-end border bg-purple border-purple w-[40px] h-[40px]">Поиск</app-button>
+    </form>
   </div>
-  <div class="">
-    <app-nav></app-nav>
+  <div class="bg-gray200">
+    <div class="px-[16.5rem]">
+      <app-nav class="flex py-[1rem]"></app-nav>
+    </div>
   </div>
 </header>

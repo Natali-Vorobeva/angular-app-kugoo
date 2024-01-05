@@ -35,6 +35,9 @@ import { SliderArticlesComponent } from './components/organisms/slider-articles/
 import { FaqComponent } from './components/organisms/faq/faq.component';
 import { PopularComponent } from './components/organisms/popular/popular.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SelectComponent } from './components/molecules/select/select.component';
+import { PhoneNumbersSectionComponent } from './components/organisms/phone-numbers-section/phone-numbers-section.component';
+import { OutsideDirective } from './directives/outside.directive';
 
 @NgModule({
   declarations: [
@@ -70,7 +73,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     SliderArticlesComponent,
     FaqComponent,
     PopularComponent,
-    HomePageComponent
+    HomePageComponent,
+    SelectComponent,
+    PhoneNumbersSectionComponent,
+    OutsideDirective
   ],
   imports: [
     BrowserModule,

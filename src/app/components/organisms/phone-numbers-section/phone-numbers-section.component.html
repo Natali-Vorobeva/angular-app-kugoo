@@ -1,0 +1,29 @@
+<div class="" (click)="clickHandler($event)">
+  <div class="flex">
+    <app-tel-number></app-tel-number>
+    <p appOutside (clickedOutside)="close()" class="pointer text-center rounded-[50%] ml-[.9rem] border border-gray600 text-gray600 w-[1.8rem] h-[1.8rem]">+</p>
+  </div>
+  <div *ngIf="isOpenModal"
+  class="absolute bg-white top-[4.3rem] right-[7rem] rounded-[.5rem] w-[24.7rem] shadow-[0px_10px_30px_0px_rgba(111,115,238,0.1)]">
+  <div appOutside class="border border-b-1 border-r-0  border-l-0 border-t-0 border-gray200">
+    <div class="py-[1.5rem] mx-[2rem]">
+      <p class="text-sm text-gray600 leading-[1.734rem]">Сервисный центр</p>
+      <p class="text-xl leading-[2.32rem] font-medium">+ 7 (499) 350 76 92</p>
+    </div>
+  </div>
+  <div class="border border-b-1 border-r-0  border-l-0 border-t-0 border-gray200">
+    <div class="py-[1.5rem] mx-[2rem]">
+      <p class="text-sm text-gray600 leading-[1.734rem]">Оптовый отдел</p>
+      <p class="text-xl leading-[2.32rem] font-medium">+7 (499) 281-64-52</p>
+      <p class="text-sm text-gray600 leading-[1.734rem]">пн-сб 10:00 - 19:00</p>
+    </div>
+  </div>
+  <div class="">
+    <div class="py-[1.5rem] mx-[2rem]">
+      <p class="text-sm text-gray600 leading-[1.734rem]">Отдел рекламаций и претензий</p>
+      <p class="text-xl leading-[2.32rem] font-medium">+ 7 (499) 350 76 92</p>
+      <p class="text-sm text-gray600 leading-[1.734rem]">ср-вс с 10:00 до 19:00</p>
+    </div>
+  </div>
+</div>
+</div>

@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './social-nav.component.scss'
 })
 export class SocialNavComponent {
-
 }
